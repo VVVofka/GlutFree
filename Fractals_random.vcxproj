@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F528D4B3-FC86-3638-909A-557D2DFD67E5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Fractals_random</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\VVV\GlutFree\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Fractals_random.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Fractals_randomd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\VVV\GlutFree\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Fractals_random.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Fractals_random</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\VVV\GlutFree\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Fractals_random.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Fractals_random</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\VVV\GlutFree\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Fractals_random.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Fractals_random</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;winmm.lib;lib\Debug\freeglutd.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VVV/GlutFree/lib/Debug/Fractals_randomd.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VVV/GlutFree/bin/Debug/Fractals_randomd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;winmm.lib;lib\Release\freeglut.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VVV/GlutFree/lib/Release/Fractals_random.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VVV/GlutFree/bin/Release/Fractals_random.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;winmm.lib;lib\MinSizeRel\freeglut.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VVV/GlutFree/lib/MinSizeRel/Fractals_random.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VVV/GlutFree/bin/MinSizeRel/Fractals_random.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_WIN32_WINNT=0x0601;WINVER=0x0601;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\PF\freeglut-3.2.1\src;F:\PF\freeglut-3.2.1\include;F:\VVV\GlutFree;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;winmm.lib;lib\RelWithDebInfo\freeglut.lib;opengl32.lib;winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/VVV/GlutFree/lib/RelWithDebInfo/Fractals_random.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/VVV/GlutFree/bin/RelWithDebInfo/Fractals_random.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\PF\freeglut-3.2.1\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/PF/freeglut-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SF:/PF/freeglut-3.2.1 -BF:/VVV/GlutFree --check-stamp-file F:/VVV/GlutFree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFiles.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;F:\PF\freeglut-3.2.1\FreeGLUTConfig.cmake.in;F:\PF\freeglut-3.2.1\config.h.in;F:\PF\freeglut-3.2.1\freeglut.pc.in;F:\PF\freeglut-3.2.1\freeglut.rc.in;F:\PF\freeglut-3.2.1\src\fg_version.h.in;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCXXCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeRCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\VVV\GlutFree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/PF/freeglut-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SF:/PF/freeglut-3.2.1 -BF:/VVV/GlutFree --check-stamp-file F:/VVV/GlutFree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFiles.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;F:\PF\freeglut-3.2.1\FreeGLUTConfig.cmake.in;F:\PF\freeglut-3.2.1\config.h.in;F:\PF\freeglut-3.2.1\freeglut.pc.in;F:\PF\freeglut-3.2.1\freeglut.rc.in;F:\PF\freeglut-3.2.1\src\fg_version.h.in;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCXXCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeRCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\VVV\GlutFree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/PF/freeglut-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SF:/PF/freeglut-3.2.1 -BF:/VVV/GlutFree --check-stamp-file F:/VVV/GlutFree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFiles.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;F:\PF\freeglut-3.2.1\FreeGLUTConfig.cmake.in;F:\PF\freeglut-3.2.1\config.h.in;F:\PF\freeglut-3.2.1\freeglut.pc.in;F:\PF\freeglut-3.2.1\freeglut.rc.in;F:\PF\freeglut-3.2.1\src\fg_version.h.in;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCXXCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeRCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\VVV\GlutFree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/PF/freeglut-3.2.1/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SF:/PF/freeglut-3.2.1 -BF:/VVV/GlutFree --check-stamp-file F:/VVV/GlutFree/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program Files\CMake\share\cmake-3.16\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakePackageConfigHelpers.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckFunctionExists.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFile.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFileCXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckIncludeFiles.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\CheckTypeSize.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\GNUInstallDirs.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;D:\Program Files\CMake\share\cmake-3.16\Modules\WriteBasicConfigVersionFile.cmake;F:\PF\freeglut-3.2.1\FreeGLUTConfig.cmake.in;F:\PF\freeglut-3.2.1\config.h.in;F:\PF\freeglut-3.2.1\freeglut.pc.in;F:\PF\freeglut-3.2.1\freeglut.rc.in;F:\PF\freeglut-3.2.1\src\fg_version.h.in;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeCXXCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeRCCompiler.cmake;F:\VVV\GlutFree\CMakeFiles\3.16.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\VVV\GlutFree\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\PF\freeglut-3.2.1\progs\demos\Fractals_random\fractals_random.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\VVV\GlutFree\ZERO_CHECK.vcxproj">
+      <Project>{D399B64F-611C-341B-8D99-02D6FC9F7EC6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\VVV\GlutFree\freeglut.vcxproj">
+      <Project>{27A4B1C2-17E1-3DF1-9680-62858E57F74F}</Project>
+      <Name>freeglut</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
